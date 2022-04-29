@@ -1,0 +1,35 @@
+int main() {
+	// Your code goes here;
+
+	int rows, cols;
+
+	cin >> rows >> cols;
+
+	int arr[rows][cols];
+
+/*
+	// row-wise input
+	for(int i=0; i < rows; i++){
+		for(int j=0; j < cols; j++){
+			cin >> arr[i][j];
+		}
+	}
+*/
+
+	// column-wise input
+	for(int i=0; i < cols; i++){
+		for(int j=0; j < rows; j++){
+			cin >> arr[j][i];
+		}
+	}
+
+	// printing
+	for(int i=0; i < rows; i++){
+		for(int j=0; j < cols; j++){
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
